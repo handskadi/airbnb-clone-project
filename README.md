@@ -149,53 +149,67 @@ CI/CD is the automation of building, testing, and deploying your code with every
 
 ## 📚 API Documentation Overview
 
-### REST Endpoints
+### 🧩 Users
 
-#### Users
-GET /users/
-POST /users/
-GET /users/{id}/
-PUT /users/{id}/
-DELETE /users/{id}/
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET    | `/users/` | List all users |
+| POST   | `/users/` | Create a new user |
+| GET    | `/users/{id}/` | Retrieve a specific user |
+| PUT    | `/users/{id}/` | Update a user profile |
+| DELETE | `/users/{id}/` | Delete a user |
 
-#### Properties
-GET /properties/
-POST /properties/
-GET /properties/{id}/
-PUT /properties/{id}/
-DELETE /properties/{id}/
+### 🏠 Properties
 
-#### Bookings
-GET /bookings/
-POST /bookings/
-GET /bookings/{id}/
-PUT /bookings/{id}/
-DELETE /bookings/{id}/
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET    | `/properties/` | List all properties |
+| POST   | `/properties/` | Add a new property |
+| GET    | `/properties/{id}/` | View a single property |
+| PUT    | `/properties/{id}/` | Update a property |
+| DELETE | `/properties/{id}/` | Delete a property |
 
-#### Payments
-POST /payments/
+### 📆 Bookings
 
-#### Reviews
-GET /reviews/
-POST /reviews/
-GET /reviews/{id}/
-PUT /reviews/{id}/
-DELETE /reviews/{id}/
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET    | `/bookings/` | List all bookings |
+| POST   | `/bookings/` | Create a booking |
+| GET    | `/bookings/{id}/` | View a booking |
+| PUT    | `/bookings/{id}/` | Update a booking |
+| DELETE | `/bookings/{id}/` | Cancel a booking |
+
+### 💳 Payments
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST   | `/payments/` | Process a payment transaction |
+
+### ⭐ Reviews
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET    | `/reviews/` | List all reviews |
+| POST   | `/reviews/` | Submit a review |
+| GET    | `/reviews/{id}/` | View a review |
+| PUT    | `/reviews/{id}/` | Update a review |
+| DELETE | `/reviews/{id}/` | Delete a review |
 
 ## 📂 Repo Structure
 
-airbnb-clone-project/
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
-├── backend/
-│   ├── django_project/
-│   ├── manage.py
-│   └── requirements.txt
-├── docker-compose.yml
-├── .github/workflows/ci.yml
-└── README.md
+airbnb-clone-project/  
+├── frontend/  
+│   ├── src/  
+│   ├── public/  
+│   └── package.json  
+├── backend/  
+│   ├── django_project/  
+│   ├── manage.py  
+│   └── requirements.txt  
+├── docker-compose.yml  
+├── .github/workflows/ci.yml  
+└── README.md  
+
 
 ## ✅ Requirements
 
